@@ -8,66 +8,66 @@
     "tier1MgmtGroups": {
       "value": [
         {
-          "id": "TYANG",
-          "displayName": "TYANG MGMT Root"
+          "id": "LOGIX",
+          "displayName": "LOGIX MGMT Root"
         }
       ]
     },
     "tier2MgmtGroups": {
       "value": [
         {
-          "id": "TYANG-Platform",
+          "id": "LOGIX-Platform",
           "displayName": "Platform Management",
-          "parentId": "TYANG"
+          "parentId": "LOGIX"
         },
         {
-          "id": "TYANG-LandingZones",
+          "id": "LOGIX-LandingZones",
           "displayName": "Landing Zones",
-          "parentId": "TYANG"
+          "parentId": "LOGIX"
         },
         {
-          "id": "TYANG-Sandbox",
+          "id": "LOGIX-Sandbox",
           "displayName": "Sandbox",
-          "parentId": "TYANG"
+          "parentId": "LOGIX"
         },
         {
-          "id": "TYANG-Quarantine",
+          "id": "LOGIX-Quarantine",
           "displayName": "Quarantine",
-          "parentId": "TYANG"
+          "parentId": "LOGIX"
         },
         {
-          "id": "TYANG-Decommissioned",
+          "id": "LOGIX-Decommissioned",
           "displayName": "Decommissioned",
-          "parentId": "TYANG"
+          "parentId": "LOGIX"
         }
       ]
     },
     "tier3MgmtGroups": {
       "value": [
         {
-          "id": "TYANG-Platform-Connectivity",
+          "id": "LOGIX-Platform-Connectivity",
           "displayName": "Connectivity",
-          "parentId": "TYANG-Platform"
+          "parentId": "LOGIX-Platform"
         },
         {
-          "id": "TYANG-Platform-Identity",
+          "id": "LOGIX-Platform-Identity",
           "displayName": "Identity",
-          "parentId": "TYANG-Platform"
+          "parentId": "LOGIX-Platform"
         },
         {
-          "id": "TYANG-Platform-Management",
+          "id": "LOGIX-Platform-Management",
           "displayName": "Management",
-          "parentId": "TYANG-Platform"
+          "parentId": "LOGIX-Platform"
         },
         {
-          "id": "TYANG-LandingZones-Corp",
+          "id": "LOGIX-LandingZones-Corp",
           "displayName": "Corp",
-          "parentId": "TYANG-LandingZones"
+          "parentId": "LOGIX-LandingZones"
         },
         {
-          "id": "TYANG-LandingZones-Online",
+          "id": "LOGIX-LandingZones-Online",
           "displayName": "Online",
-          "parentId": "TYANG-LandingZones"
+          "parentId": "LOGIX-LandingZones"
         }
       ]
     },
@@ -75,7 +75,7 @@
       "value": true
     },
     "defaultMgId": {
-      "value": "TYANG-Quarantine"
+      "value": "LOGIX-Quarantine"
     },
     "configMGSettings": {
       "value": true
