@@ -1,0 +1,216 @@
+{
+  "id": "/providers/Microsoft.Resources/deployments/mgmt-groups",
+  "location": "canadacentral",
+  "name": "mgmt-groups",
+  "properties": {
+    "correlationId": "6778c76c-ce67-4bf3-8c74-321522ad05d9",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix",
+            "resourceName": "Logix",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-platform",
+        "resourceName": "Logix-platform",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix",
+            "resourceName": "Logix",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-landingzones",
+        "resourceName": "Logix-landingzones",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix",
+            "resourceName": "Logix",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-sandboxes",
+        "resourceName": "Logix-sandboxes",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix",
+            "resourceName": "Logix",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-decommissioned",
+        "resourceName": "Logix-decommissioned",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix-platform",
+            "resourceName": "Logix-platform",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-management",
+        "resourceName": "Logix-management",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix-platform",
+            "resourceName": "Logix-platform",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-connectivity",
+        "resourceName": "Logix-connectivity",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix-platform",
+            "resourceName": "Logix-platform",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-identity",
+        "resourceName": "Logix-identity",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix-landingzones",
+            "resourceName": "Logix-landingzones",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-online",
+        "resourceName": "Logix-online",
+        "resourceType": "Microsoft.Management/managementGroups"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/providers/Microsoft.Management/managementGroups/Logix-landingzones",
+            "resourceName": "Logix-landingzones",
+            "resourceType": "Microsoft.Management/managementGroups"
+          }
+        ],
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-corp",
+        "resourceName": "Logix-corp",
+        "resourceType": "Microsoft.Management/managementGroups"
+      }
+    ],
+    "duration": "PT11M30.6654716S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-connectivity"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-corp"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-decommissioned"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-identity"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-landingzones"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-management"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-online"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-platform"
+      },
+      {
+        "id": "/providers/Microsoft.Management/managementGroups/Logix-sandboxes"
+      }
+    ],
+    "outputs": {},
+    "parameters": {
+      "landingZoneMgs": {
+        "type": "Array",
+        "value": [
+          "online",
+          "corp"
+        ]
+      },
+      "platformMgs": {
+        "type": "Array",
+        "value": [
+          "management",
+          "connectivity",
+          "identity"
+        ]
+      },
+      "topLevelManagementGroupPrefix": {
+        "type": "String",
+        "value": "Logix"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Management",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "managementGroups",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "8592091585812747928",
+    "templateLink": {
+      "contentVersion": "1.0.0.0",
+      "id": null,
+      "queryString": null,
+      "relativePath": null,
+      "uri": "https://raw.githubusercontent.com/ujemeboi/Azure-Infrac-as-Code/master/Azure-Bicep/management.group/mgmtgrp.json"
+    },
+    "timestamp": "2023-04-09T00:01:15.751822+00:00",
+    "validatedResources": null
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
